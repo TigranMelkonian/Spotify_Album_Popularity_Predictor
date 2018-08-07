@@ -20,6 +20,6 @@ The final cleaned data includes:
     • Non-numeric features such as: artist name, album name, genres, and key mode 
     
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
-## Popularity Analysis by numeric discographic features:
-### Correlation matrix between numeric discographic features
-## Popularity Analysis by Genres
+    ## Popularity Analysis by numeric discographic features:
+        ### Correlation matrix between numeric discographic features
+    ## Popularity Analysis by Genres
