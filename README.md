@@ -58,7 +58,7 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
   ## Popularity Analysis by numeric discographic features:
- ![alt text] (https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
+ ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
    ### Correlation matrix between numeric discographic features
   ## Popularity Analysis by Genres
   
