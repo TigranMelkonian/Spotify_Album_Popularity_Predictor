@@ -1,4 +1,4 @@
-# Spotify_Artist_Popularity_Predictor
+# Spotify Artist Popularity Predictor
 
 # Introduction: 
 In this project I analyzed the discographic characteristics of 300,000 tracks scraped from Spotify’s  API to identify which are the largest influencers on artist popularity and produce a predictive model for artist popularity. 
@@ -17,4 +17,9 @@ The final cleaned data includes:
 
     • Aggregated discographic features for each artist’s album 
     • Number of Spotify followers (updated 8/7/2018)                                          
-    • Non-numeric features such as: artist name, album name, genres, and key mode                                
+    • Non-numeric features such as: artist name, album name, genres, and key mode 
+    
+# Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
+## Popularity Analysis by numeric discographic features:
+### Correlation matrix between numeric discographic features
+## Popularity Analysis by Genres
