@@ -55,10 +55,14 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
     • Number of Spotify followers (updated 8/7/2018)                                          
     • Non-numeric features such as: artist name, album name, genres, and key mode 
 (include the head of a final spotify dataset here)
+
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
   ## Popularity Analysis by numeric discographic features:
  ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
+ 
+ ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/scatterplot_artist_popularity_relations.png "Regression plots of artist popularity realtions with dicographic features")
    ### Correlation matrix between numeric discographic features
+   ![alttext]( "Correlation Matrix")
   ## Popularity Analysis by Genres
   
