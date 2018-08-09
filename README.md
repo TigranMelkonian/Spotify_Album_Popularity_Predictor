@@ -1,7 +1,11 @@
 # Spotify Artist Popularity Predictor
 
 # Introduction: 
-In this project I analyzed the discographic characteristics of 300,000 tracks scraped from Spotify’s  API to identify which are the largest influencers on artist popularity and produce a predictive model for artist popularity. 
+In this project I analyzed the discographic characteristics of 300,000 tracks scraped from Spotify’s API to identify which are the largest influencers on artist popularity and produce a predictive model for artist popularity. 
+
+How can we predict the greatness of an artist from historical discographic data and popular preferences? This question puzzled me for a long time since there is no universal way to claim the popularity of an artist. Many people rely on critics to gauge the quality of a film, while others use their instincts. 
+
+Given that hundreds of albums are produced each year, There has to be a better way for us to tell the greatness of movie without relying on critics or our own instincts.
 
 # Project Goals: 
 Analyze the trend of music development over the past 100 years and produce models to predict artist popularity through machine learning algorithms. 
