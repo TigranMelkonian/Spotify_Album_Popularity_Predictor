@@ -61,7 +61,7 @@ ___
   ## Popularity Analysis by numeric discographic features:
  ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
  
- ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/scatterplot_artist_popularity_relations.png "Regression plots of artist popularity realtions with dicographic features")
+ ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/regression_plot_artist_popularity.png "Regression plots")
    ### Correlation matrix between numeric discographic features
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
   ## Popularity Analysis by Genres
