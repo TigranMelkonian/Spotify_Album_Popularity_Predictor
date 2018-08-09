@@ -63,6 +63,6 @@ ___
  
  ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/scatterplot_artist_popularity_relations.png "Regression plots of artist popularity realtions with dicographic features")
    ### Correlation matrix between numeric discographic features
-   ![alttext]( "Correlation Matrix")
+   ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
   ## Popularity Analysis by Genres
   
