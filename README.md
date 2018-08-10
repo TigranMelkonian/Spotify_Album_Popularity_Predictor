@@ -68,5 +68,29 @@ ___
  ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/regression_plot_artist_popularity.png "Regression plots")
    ### Correlation matrix between numeric discographic features
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
+   
   ## Popularity Analysis by Genres
   
+Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
+
+  ## Multiple Linear Regression
+   Multiple Linear Regression model was fitted to predict artist popularity using the following variables:
+   * Track Popularity
+   * Number of Spotify Followers
+   * Loudness
+   * Danceability
+   * Energy
+   * Acousticness
+   * Instrumentalness
+   
+  ## Random Forrest Regression 
+   Random Forest model was fitted to predict artist popularity using the following variables:
+   * Track Popularity
+   * Number of Spotify Followers
+   * Loudness
+   * Danceability
+   * Energy
+   * Acousticness
+   * Instrumentalness
+  
+The dataset was divided into two parts, 75% of the albums were treated as the training set, and the rest 25% belonged to the testing set. Up to 5000 trees were generated to fit the random forest. 
