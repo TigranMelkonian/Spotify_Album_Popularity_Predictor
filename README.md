@@ -71,6 +71,7 @@ ___
    
   ## Popularity Analysis by Genres
   
+  ## Prediction Model Discographic Feature Selection
 Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
 
   ## Multiple Linear Regression
