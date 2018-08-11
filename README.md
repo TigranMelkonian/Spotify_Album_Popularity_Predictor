@@ -10,6 +10,13 @@ Given that hundreds of albums are produced each year, There has to be a better w
 # Project Goals: 
 Analyze the trend of music development over the past 100 years and produce models to predict artist popularity through machine learning algorithms. 
 
+Here’s a quick summary of my approach:
+
+* Get the data from Spotify API
+* Process the data to extract audio features for each artist
+* Analyze and visualize each discographic feature for all the artists
+* Apply Multiple Linear Regression and Random Forest modeling to predict artist popularity
+
 # Data Extraction and Cleaning: 
 I used [Spotify’s awesome API](https://developer.spotify.com/documentation/web-api/) to extract data for 2185 celebrities over the past 100 years. 
 
@@ -69,10 +76,11 @@ ___
    ### Correlation matrix between numeric discographic features
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
    
+   
   ## Popularity Analysis by Genres
   
   ## Prediction Model Discographic Feature Selection
-Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
+Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the 7 variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
 
   ## Multiple Linear Regression
    Multiple Linear Regression model was fitted to predict artist popularity using the following variables:
