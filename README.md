@@ -82,6 +82,19 @@ ___
   ## Prediction Model Discographic Feature Selection
 Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the 7 variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
 
+  ## Creating the Training and Testing Data-sets
+The original dataset was randomly divided into two parts, 75% of the albums were treated as the training set, and the rest 25% belonged to the testing set.
+```R
+#75% of the sample size
+smp_size <- floor(0.75 * nrow(aggData))
+
+#set the seed to make partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(aggData)), size = smp_size)
+
+train <- aggData[train_ind, ]
+test <- aggData[-train_ind, ]
+```
   ## Multiple Linear Regression
    Multiple Linear Regression model was fitted to predict artist popularity using the following variables:
    * Track Popularity
@@ -91,7 +104,18 @@ Although initially I scraped 15 variables from Spotify pertaining to album level
    * Energy
    * Acousticness
    * Instrumentalness
+```R
+#multiple linear regression model
+linearModel <- lm(artist_popularity ~ track_popularity + artist_num_followers + loudness + danceability + energy + acousticness + instrumentalness, data = train)
+linearPred <- predict(linearModel, newdata = test)
+lmModelAccuracyAdjusted <- accuracy(test$artist_popularity, linearPred)
+
+#create dataset for Multiple Linear Regression
+lmPred <- data.frame(linearPred)
+lmPred$actual <- test$artist_popularity
+```
    
+  
   ## Random Forrest Regression 
    Random Forest model was fitted to predict artist popularity using the following variables:
    * Track Popularity
@@ -101,5 +125,14 @@ Although initially I scraped 15 variables from Spotify pertaining to album level
    * Energy
    * Acousticness
    * Instrumentalness
-  
-The dataset was divided into two parts, 75% of the albums were treated as the training set, and the rest 25% belonged to the testing set. Up to 5000 trees were generated to fit the random forest. 
+```R
+#Random Forest model
+model <- randomForest(artist_popularity ~ track_popularity + artist_num_followers + loudness + danceability + energy + acousticness + instrumentalness, data = train)
+pred <- predict(model, newdata = test)
+rfModelAccuracyAdjusted <- accuracy(test$artist_popularity, pred)
+
+#create dataset for  Random Foreest results
+rfPred <- data.frame(pred)
+rfPred$actual <- test$artist_popularity
+```
+
