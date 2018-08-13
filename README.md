@@ -63,15 +63,28 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
     • Aggregated discographic features for each artist’s album 
     • Number of Spotify followers (updated 8/7/2018)                                          
     • Non-numeric features such as: artist name, album name, genres, and key mode 
-    
+   ### Sample Data-Set Output
 artist_name | album_name | album_release_date | album_popularity | danceability | energy | loudness | speechiness | acousticness | instrumentalness | liveness | valence | tempo | duration_ms | track_popularity | artist_generes | artist_popularity | artist_num_followers   
 --- | --- | --- |--- | --- | --- |--- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---   
-Drake | What A Time To Be Alive | 2015-09-25 | 43 | .7553636 | .5016364 | -8.651182 | 0.28931818 | 0.14069227 | 2.729091e-04 | 0.1334273 | 0.2900909 | 139.35818 | 221451.36 | 33.54545455 | canadian hip hop | 100 | 23980695
+Drake | What A Time To Be Alive | 2015-09-25 | 43 | 0.7553636 | 0.5016364 | -8.651182 | 0.28931818 | 0.14069227 | 2.729091e-04 | 0.1334273 | 0.2900909 | 139.35818 | 221451.36 | 33.54545455 | canadian hip hop | 100 | 23980695
 Post Malone | Stoney | 2016-12-09 | 71 | 0.6064286 | 0.6110714 | -6.498643 | 0.06784286 | 0.28190714 | 4.127143e-06 | 0.1321143 | 0.3184286 | 116.58379 | 217631.36 | 59.57142857 | pop | 94 | 5429208
 J Balvin | Vibras | 2018-05-25 | 84 | 0.6547571 | 0.6224286 | -7.313286 | 0.15067857 | 0.29990000 | 5.273435e-02 | 0.1759071 | 0.6045286 | 135.57214 | 187903.86 | 73.00000000 | latin | 92 | 9449493 
+
+   ### Audio features description
+The description of each feature from the Spotify Web API Guidance can be found below:
+
+* **Danceability:** describes the suitability of a track for dancing. This is based on a combination of musical elements including tempo, * * rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+* **Energy:** a measure from 0.0 to 1.0, and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
+* **Speechiness:** Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent instrumental music and other non-speech-like tracks.
+* **Acousticness:** a confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence that the track is acoustic.
+* **Instrumentalness:** predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly “vocal”. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.
+* **Liveness:** detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
+Valence: a measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (for example happy, cheerful, euphoric), while tracks with low valence sound more negative (for example sad, depressed, angry).
+* **Tempo:** the overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece, and derives directly from the average beat duration.
+* **Duration_ms:** the duration of the track in milliseconds.
 ___
-# Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
-  ## Popularity Analysis by numeric discographic features:
+# Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance:
+  ## Popularity Analysis by numeric discographic features
  ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
  
  ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/regression_plot_artist_popularity.png "Regression plots")
