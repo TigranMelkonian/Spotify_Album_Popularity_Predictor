@@ -67,8 +67,7 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
 artist_name | album_name | album_release_date | album_popularity | danceability | energy | loudness | speechiness | acousticness | instrumentalness | liveness | valence | tempo | duration_ms | track_popularity | artist_generes | artist_popularity | artist_num_followers   
 --- | --- | --- |--- | --- | --- |--- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---   
 Drake | What A Time To Be Alive | 2015-09-25 | 43 | .7553636 | .5016364 | -8.651182 | 0.28931818 | 0.14069227 | 2.729091e-04 | 0.1334273 | 0.2900909 | 139.35818 | 221451.36 | 33.54545455 | canadian hip hop | 100 | 23980695
-Post Malone | Stoney | 2016-12-09 | 71 | 0.6064286 | 0.6110714 | -6.498643 | 0.06784286 | 0.28190714 | 4.127143e-06
- | 0.1321143 | 0.3184286 | 116.58379 | 217631.36 | 59.57142857 | pop | 94 | 5429208
+Post Malone | Stoney | 2016-12-09 | 71 | 0.6064286 | 0.6110714 | -6.498643 | 0.06784286 | 0.28190714 | 4.127143e-06 | 0.1321143 | 0.3184286 | 116.58379 | 217631.36 | 59.57142857 | pop | 94 | 5429208
 J Balvin | Vibras | 2018-05-25 | 0.6547571 | 0.6224286 | -7.313286 | 0.15067857 | 0.29990000 | 5.273435e-02 | 0.1759071 | 0.6045286 | 135.57214 | 187903.86 | 73.00000000 | latin | 92 | 9449493 
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
