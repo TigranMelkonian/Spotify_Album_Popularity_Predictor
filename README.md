@@ -65,7 +65,8 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
     • Non-numeric features such as: artist name, album name, genres, and key mode 
     
 |artist_name|album_name|album_release_date|album_popularity|dabceability|energy|loudness|speechiness|acousticness|instrumentalness
-        --- | ---      | ---              | ---            | ---        | ---  | ---    | ---       | ---        | ---            
+        --- | ---      | ---              | ---            | ---        | ---  | ---    | ---       | ---        | ---        
+| col 3 is  | right-aligned| $1600 |col 3 is      | right-aligned | $1600 |col 3 is      | right-aligned | $1600 | $1600 
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
   ## Popularity Analysis by numeric discographic features:
