@@ -64,7 +64,7 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
     • Number of Spotify followers (updated 8/7/2018)                                          
     • Non-numeric features such as: artist name, album name, genres, and key mode 
     
-Markdown | Less | Pretty | Markdown | Less | Pretty | Markdown | Less | Pretty | Markdown | Less | Pretty   
+artist_name | album_name | album_release_date | album_popularity | danceability | energy | loudness | speechiness | acousticness | Markdown | Less | Pretty   
 --- | --- | --- |--- | --- | --- |--- | --- | --- |--- | --- | --- 
 *Still* | `renders` | **nicely** | *Still* | `renders` | **nicely** | *Still* | `renders` | **nicely** | *Still* | `renders` |**nicely**
 1 | 2 | 3 | 1 | 2 | 3 | 1 | 2 | 3 | 1 | 2 | 3
