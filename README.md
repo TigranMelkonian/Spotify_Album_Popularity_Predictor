@@ -60,10 +60,12 @@ for (i in 1:nrow(spotify_artists)) {
 ```
 I merged all the data into a single data frame and started feature manipulation to ensure the models work as intended. Some examples of feature manipulation are removing NA’s, converting categorical features to numeric, converting character string to an actual date/time type, and simplifying the genres feature to include only the first element of each tracks genre list. 
 The final cleaned data includes (check out the final_data_csv file to get a glimps of the cleaned dataset used for analyses + prediciton modeling):   
-    • Aggregated discographic features for each artist’s album 
-    • Number of Spotify followers (updated 8/7/2018)                                          
+    • Aggregated discographic features for each artist’s album   
+    • Number of Spotify followers (updated 8/7/2018)                                           
     • Non-numeric features such as: artist name, album name, genres, and key mode 
+    
    ### Sample Data-Set Output
+   
 artist_name | album_name | album_release_date | album_popularity | danceability | energy | loudness | speechiness | acousticness | instrumentalness | liveness | valence | tempo | duration_ms | track_popularity | artist_generes | artist_popularity | artist_num_followers   
 --- | --- | --- |--- | --- | --- |--- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---   
 Drake | What A Time To Be Alive | 2015-09-25 | 43 | 0.7553636 | 0.5016364 | -8.651182 | 0.28931818 | 0.14069227 | 2.729091e-04 | 0.1334273 | 0.2900909 | 139.35818 | 221451.36 | 33.54545455 | canadian hip hop | 100 | 23980695
@@ -71,6 +73,7 @@ Post Malone | Stoney | 2016-12-09 | 71 | 0.6064286 | 0.6110714 | -6.498643 | 0.0
 J Balvin | Vibras | 2018-05-25 | 84 | 0.6547571 | 0.6224286 | -7.313286 | 0.15067857 | 0.29990000 | 5.273435e-02 | 0.1759071 | 0.6045286 | 135.57214 | 187903.86 | 73.00000000 | latin | 92 | 9449493 
 
    ### Audio features description
+   
 The description of each feature from the Spotify Web API Guidance can be found below:
 
 * **Danceability:** describes the suitability of a track for dancing. This is based on a combination of musical elements including tempo, * * rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
