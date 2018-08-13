@@ -3,24 +3,23 @@
 # Introduction: 
 In this project I analyzed the discographic characteristics of 300,000 tracks scraped from Spotify’s API to identify which are the largest influencers on artist popularity and produce a predictive model for artist popularity. 
 
-How can we predict the greatness of an artist from historical discographic data and popular preferences? This question puzzled me for a long time since there is no universal way to claim the popularity of an artist. Many people rely on critics to gauge the quality of a artist, while others use their instincts. 
+How can we predict the greatness of an artist from historical discographic data and popular preferences? This question puzzled me for a long time since there is no universal way to claim the popularity of an artist. Many people rely on critics to gauge the quality of an artist, while others use their instincts. 
 
-Given that hundreds of albums are produced each year, There has to be a better way for us to tell the greatness of movie without relying on critics or our own instincts.
+Given that hundreds of albums are produced each year, There has to be an objective way for us to tell the greatness of an artist without relying on critics or our own instincts.
 
 # Project Goals: 
-Analyze the trend of music development over the past 100 years and produce models to predict artist popularity through machine learning algorithms. 
+Analyze the trend of music development over the past 100 years and produce models to predict artist popularity through constructing Multiple Linear Regreession and Random Forrest models. 
 
 Here’s a quick summary of my approach:
 
-* Get the data from Spotify API
+* Aquire Spotify API Client ID and Secret ID
+* Get the data using Spotify's API
 * Process the data to extract audio features for each artist
 * Analyze and visualize each discographic feature for all the artists
 * Apply Multiple Linear Regression and Random Forest modeling to predict artist popularity
 
 # Data Extraction and Cleaning: 
-I used [Spotify’s awesome API](https://developer.spotify.com/documentation/web-api/) to extract data for 2185 celebrities over the past 100 years. 
-
-Then I acquired track discographic data and number of followers for each artist by their name. 
+I used [Spotify’s awesome API](https://developer.spotify.com/documentation/web-api/) to extract discographic data and number of followers for each of 2185 celebrities over the past 100 years. (Follow steps on Spotify's webpage to set up a developer account!) 
 ```R
 devtools::install_github('charlie86/spotifyr')
 library(spotifyr)
@@ -59,13 +58,14 @@ for (i in 1:nrow(spotify_artists)) {
   cat(paste0('\nFinished: ', i, ". Starting next loop on " , i+1, sep =' '))
 }
 ```
-I merged all the data into a single data frame and started feature manipulation to ensure the machine learning algorithms work as intended. Some examples of feature manipulation are removing NA’s, converting categorical features to numeric, converting character string to an actual date/time type, and simplifying the genres feature to include only the first element of each tracks genre list. 
+I merged all the data into a single data frame and started feature manipulation to ensure the models work as intended. Some examples of feature manipulation are removing NA’s, converting categorical features to numeric, converting character string to an actual date/time type, and simplifying the genres feature to include only the first element of each tracks genre list. 
 The final cleaned data includes (check out the final_data_csv file to get a glimps of the cleaned dataset used for analyses + prediciton modeling):   
-
     • Aggregated discographic features for each artist’s album 
     • Number of Spotify followers (updated 8/7/2018)                                          
     • Non-numeric features such as: artist name, album name, genres, and key mode 
-(include the head of a final spotify dataset here)
+    
+|artist_name|album_name|album_release_date|album_popularity|dabceability|energy|loudness|speechiness|acousticness|instrumentalness|liveness|valence|tempo|duration_ms|track_popularity||artist_generes|artist_popularity|artist_num_followers|
+--- | --- | ---|--- | --- | ---|--- | --- | ---|--- | --- | ---|--- | --- | ---|--- | --- | ---|--- | --- | ---
 
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
