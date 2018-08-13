@@ -64,8 +64,8 @@ The final cleaned data includes (check out the final_data_csv file to get a glim
     • Number of Spotify followers (updated 8/7/2018)                                          
     • Non-numeric features such as: artist name, album name, genres, and key mode 
     
-|artist_name|album_name|album_release_date|album_popularity|dabceability|energy|loudness|speechiness|acousticness|instrumentalness|liveness|valence|tempo|duration_ms|track_popularity||artist_generes|artist_popularity|artist_num_followers|
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|artist_name|album_name|album_release_date|album_popularity|dabceability|energy|loudness|speechiness|acousticness|instrumentalness
+        --- | ---      | ---              | ---            | ---        | ---  | ---    | ---       | ---        | ---            
 ___
 # Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance
   ## Popularity Analysis by numeric discographic features:
