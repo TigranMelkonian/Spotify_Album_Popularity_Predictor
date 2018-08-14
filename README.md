@@ -86,16 +86,16 @@ Valence: a measure from 0.0 to 1.0 describing the musical positiveness conveyed 
 * **Tempo:** the overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece, and derives directly from the average beat duration.
 * **Duration_ms:** the duration of the track in milliseconds.
 ___
-# Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance:
-  ## Popularity Analysis by numeric discographic features
+# Exploratory Data Analysis and Data visualization for Determining Feature Predictive Importance:(SECTION NOT COMPLETE)
+  ## Popularity Analysis by numeric discographic features(MISSING DESC.)
  ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
  
  ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/regression_plot_artist_popularity.png "Regression plots")
-   ### Correlation matrix between numeric discographic features
+   ### Correlation matrix between numeric discographic features(MISSING DESC.)
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
    
    
-  ## Popularity Analysis by Genres
+  ## Popularity Analysis by Genres(MISSING DESC. and visual)
   
   ## Prediction Model Discographic Feature Selection
 Although initially I scraped 15 variables from Spotify pertaining to album level discographic data, many variables  were not applicable to predict artist popularity due to poor correlations, so I  only selected the 7 variables that showcased relatively strong corelations with artist popularity and promising regression relations from the plots above.
@@ -113,7 +113,7 @@ train_ind <- sample(seq_len(nrow(aggData)), size = smp_size)
 train <- aggData[train_ind, ]
 test <- aggData[-train_ind, ]
 ```
-  ## Multiple Linear Regression
+  ## Multiple Linear Regression (INCOMPLETE)
    Multiple Linear Regression model was fitted to predict artist popularity using the following variables:
    * Track Popularity
    * Number of Spotify Followers
@@ -134,7 +134,7 @@ lmPred$actual <- test$artist_popularity
 ```
    
   
-  ## Random Forrest Regression 
+  ## Random Forrest Regression (INCOMPLETE) 
    Random Forest model was fitted to predict artist popularity using the following variables:
    * Track Popularity
    * Number of Spotify Followers
