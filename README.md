@@ -89,7 +89,36 @@ ___
   ## Popularity Analysis by numeric discographic features(MISSING DESC.)
  ![alt text](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/discography_histograms.png "Numeric Discography Distributions")
  
+ * track_popularity: 
+ * artist_num_followers: 
+ * loudness: 
+ * danceability: 
+ * energy: 
+ * accousticness: 
+ * instrumentalness: 
+ * tempo: 
+ * speechiness: 
+ * liveness: 
+ * valence: 
+ * duration_ms: 
+ 
+ 
  ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/regression_plot_artist_popularity.png "Regression plots")
+ 
+ * track_popularity: 
+ * artist_num_followers: 
+ * loudness: 
+ * danceability: 
+ * energy: 
+ * tempo: 
+ * accousticness: 
+ * instrumentalness: 
+ * speechiness: 
+ * valence: 
+ * duration_ms: 
+ * liveness: 
+ 
+ 
    ### Correlation matrix between numeric discographic features(MISSING DESC.)
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
    
