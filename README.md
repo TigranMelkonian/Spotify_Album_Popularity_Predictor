@@ -119,9 +119,9 @@ ___
  * liveness: 
  
  
-   ### Correlation matrix between numeric discographic features(MISSING DESC.)
+   ### Correlation Matrix Between Numeric Discographic Features(MISSING DESC.)
    ![alttext](https://github.com/TigranMelkonian/Spotify_Artist_Popularity_Predictor/blob/master/correlation_matrix.png "Correlation Matrix")
-   
+      The above plot shows that our predictor variables are generally indepedent, except for a strong positive correlation between loudness and energy and a strong negative correlation between energy and acousticness.
    
   ## Popularity Analysis by Genres(MISSING DESC. and visual)
   
