@@ -4,18 +4,20 @@ library(spotifyr)
 library(tidyverse)
 
 #set system enviroment variables for client ID and Secret ID
-Sys.setenv(SPOTIFY_CLIENT_ID = '##########################')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = '##########################')
+credentials <- read.csv('developer_credentials.csv')
+Sys.setenv(SPOTIFY_CLIENT_ID = as.character(credentials$client_id))
+Sys.setenv(SPOTIFY_CLIENT_SECRET = as.character(credentials$client_secret_id))
 
 access_token <- get_spotify_access_token()
 
 #pull in artist metrics such as genere, num followers, and popularity
+spotify_artists <- read.csv('spotify_artists.csv')
 for (i in 1:nrow(spotify_artists)) {
   if (i == 1){
-    numFollowers <- get_artists(as.character(spotify_artists$dbname[i]))
+    numFollowers <- get_artists(as.character(spotify_artists$artist_name[i]))
   }else {
     tryCatch({
-      numFollowers <- rbind(numFollowers, get_artists(as.character(spotify_artists$dbname[i])))},error=function(cond)
+      numFollowers <- rbind(numFollowers, get_artists(as.character(spotify_artists$artist_name[i])))},error=function(cond)
       {
         NA
       })
@@ -26,16 +28,17 @@ for (i in 1:nrow(spotify_artists)) {
 #pull in album audio features 
 for (i in 1:nrow(spotify_artists)) {
   if (i == 1){
-    final_data <- get_artist_audio_features(as.character(spotify_artists$dbname[i]))
+    final_data <- get_artist_audio_features(as.character(spotify_artists$artist_name[i]))
   }else {
     tryCatch({
-      final_data <- rbind(final_data, get_artist_audio_features(as.character(spotify_artists$dbname[i])))},error=function(cond)
+      final_data <- rbind(final_data, get_artist_audio_features(as.character(spotify_artists$artist_name[i])))},error=function(cond)
       {
         NA
       })
   }
   cat(paste0('\nFinished: ', i, ". Starting next loop on " , i+1, sep =' '))
 }
+
 
 ####################
 #clean and merge data -> save csv
