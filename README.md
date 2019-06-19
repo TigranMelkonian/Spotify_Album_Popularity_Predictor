@@ -192,3 +192,5 @@ rfPred$actual <- test$artist_popularity
 _ | ME | RMSE | MAE | MPE | MAPE 
 --- | --- | --- |--- | --- | --- 
 Test set | -0.05248856 | 4.049456 | 2.78827 | 0.1950373 | 4.853123
+
+ ## Results... So What?
