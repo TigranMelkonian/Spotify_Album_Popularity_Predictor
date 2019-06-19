@@ -164,7 +164,7 @@ lmPred$actual <- test$artist_popularity
 ```
   ### Predicted artist_popularity Accurracy(MISSING DESC.)
   
-| ME | RMSE | MAE | MPE | MAPE 
+ | ME | RMSE | MAE | MPE | MAPE 
 --- | --- | --- |--- | --- | --- 
 Test set | -0.2322359 | 10.6027 | 8.028139 | -0.20649 | 12.78574
   
@@ -189,6 +189,6 @@ rfPred$actual <- test$artist_popularity
 ```
   ### Predicted artist_popularity Accurracy(MISSING DESC.)
   
-| ME | RMSE | MAE | MPE | MAPE 
+ | ME | RMSE | MAE | MPE | MAPE 
 --- | --- | --- |--- | --- | --- 
 Test set | -0.05248856 | 4.049456 | 2.78827 | 0.1950373 | 4.853123
